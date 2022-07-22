@@ -1,0 +1,97 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block title %}home{% endblock title %}
+{% block homeactive %}active{% endblock homeactive %}
+
+<body>
+    {% block body %}
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                aria-label="Slide 6"></button>
+        </div>
+        <div class="carousel-inner mt-3">
+            <div class="carousel-item active">
+                <img src="{% static 'coding.webp' %}" height="400" width="500" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'javascript.webp' %}" height="400" width="500" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'html.jpeg' %}" height="400" width="500" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'django.jpg' %}" height="400" width="500" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'python.png' %}" height="400" width="500" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'css.jpg' %}" height="400" width="500" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container my-3">
+        <h3 class="text-center">Me at a glance!</h3>
+        <div class="row mt-3">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem; height: 25rem; ">
+                    <img src="../static/django.jpg" height="150" width="500" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Django</h5>
+                        <p class="card-text">Clear understanding of django framework following MVT architecture i.e.
+                            Model, View & Template to organise a large multipage website.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem; height: 25rem;">
+                    <img src="../static/javascript.webp" height="150" width="500" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Javascript</h5>
+                        <p class="card-text">Use of javascript in addition to html & css to make the website
+                            interesting, dynamic and event reactive.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem; height: 25rem;">
+                    <img src="../static/python.png" height="150" width="500" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Python</h5>
+                        <p class="card-text">Good experience & very comfortable in python language with coding knowledge
+                            in
+                            DSA with reasoning and logical ability to find solution to problems</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock body %}
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+{% extends 'base.html'%}
+{% block title %}projects{% endblock title %}
+{% block projectsactive %}active{% endblock projectsactive %}
+
+  <body>
+    {% block body %}
+    <div class="alert alert-info" role="alert">
+      For code bases of the below projects mentioned, please check out the github repository: 
+      <a href='https://github.com/akshatsinha97?tab=repositories'>github.com/akshatsinha97</a>
+    </div>
+    <section class="SMS">
+      <h3>Student Management System</h3>
+      <p>Built a student management system that takes 
+        student details as input and displays the entries in a table format.</p>
+      <p>Technologies used:</p>
+        <ul>
+          <li>Java</li>
+          <li>Springboot framework</li>
+          <li>MySQL</li>
+          <li>Thymeleaf</li>
+        </ul>
+    </section>
+    <section class="PP">
+      <h3>Personal Portfolio</h3>
+      <p>Built a personal portfolio that displays my personal information/details 
+        & skillset spanned accross various pages.</p>
+      <p>Technologies used:</p>
+        <ul>
+          <li>Python</li>
+          <li>Django framework</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Bootstrap</li>
+        </ul>
+    </section>
+    <section class="QA">
+      <h3>Quizzler App</h3>
+      <p>Built a Quizzler App that gets a set of questions from a 
+        freely available API endpoint and has true/false button 
+        as option for user input and scores are displayed accordingly. 
+        It is available on both GUI and CLI platform.</p>
+      <p>Technologies used:</p>
+        <ul>
+          <li>Python</li>
+          <li>tkinter</li>
+        </ul>
+    </section>
+    {% endblock body %}
+  </body>
+</html>
